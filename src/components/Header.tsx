@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 import { Menu, X } from "lucide-react";
-import logo from "../../public/images/logo.png";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,9 +57,9 @@ export default function Header() {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6" />
+              <X className="h-6 w-6 text-white" />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Menu className="h-6 w-6 text-white" />
             )}
           </button>
         </div>
@@ -72,21 +71,21 @@ export default function Header() {
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
             <Link
               href="/"
-              className="px-4 py-2 rounded-lg hover:bg-muted transition-colors"
+              className="px-4 py-2 rounded-lg hover:bg-muted transition-colors text-white"
               onClick={closeMenu}
             >
               Home
             </Link>
             <Link
               href="/portfolio"
-              className="px-4 py-2 rounded-lg hover:bg-muted transition-colors"
+              className="px-4 py-2 rounded-lg hover:bg-muted transition-colors text-white"
               onClick={closeMenu}
             >
               Portfolio
             </Link>
             <Link
               href="/blogs"
-              className="px-4 py-2 rounded-lg hover:bg-muted transition-colors"
+              className="px-4 py-2 rounded-lg hover:bg-muted transition-colors text-white"
               onClick={closeMenu}
             >
               Blogs

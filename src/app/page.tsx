@@ -22,11 +22,11 @@ export default function Home() {
         {/* Content */}
         <div className="container mx-auto px-4 py-20 text-center relative z-10">
           <ScrollAnimation>
-            <Logo className="text-7xl" />
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-pink-600">
+            <Logo className="text-5xl md:text-7xl" />
+            <h1 className="text-3xl md:text-7xl font-bold mb-6 text-pink-600">
               Build Your Digital Future
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10">
+            <p className="text-sm md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10">
               Professional web development and digital services to transform
               your business
             </p>
