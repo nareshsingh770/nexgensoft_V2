@@ -3,7 +3,7 @@ name: Deploy Next.js Static (SSG) to GitHub Pages
 on:
   push:
     branches:
-      - main # or your default branch
+      - main
 
 jobs:
   build-deploy:
@@ -27,5 +27,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           force_orphan: true
-          # Optional: Add .nojekyll
-          # enable_jekyll: false
